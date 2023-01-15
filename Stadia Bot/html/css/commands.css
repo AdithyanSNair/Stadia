@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --green:#a64cff;
+   --white:#a64cff;
+   --light-white:#fff;
+   --black:#fff;
+   --light-bg:rgba(43, 43, 43, 0);
+   --violet:#2d612b;
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: .2s linear;
+   text-transform: capitalize;
+}
+
+*::selection{
+   background-color: var(--white);
+   color:var(--black);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: var(--green);
+   border-radius: 5rem;
+}
+
+body{
+   background-color: var(--black);
+}
+
+section{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:2rem;
+}
+
+.btn{
+   display: inline-block;
+   margin-top: 1rem;
+   border-radius: 5rem;
+   background-color: var(--light-bg);
+   cursor: pointer;
+   color:var(--white);
+   font-size: 1.8rem;
+   padding:1rem 3rem;
+}
+
+.btn:hover{
+   background-color: var(--white);
+   color:var(--black);
+}
+
+.heading{
+   margin-bottom: 2.5rem;
+   text-align: center;
+   font-size: 4rem;
+   color:var(--white);
+   text-transform: uppercase;
+}
+
+.heading span{
+   color:var(--green);
+   text-transform: uppercase;
+}
+
+.header{
+   position: fixed;
+   top:0; left:0; right:0;
+   z-index: 1000;
+   background-color: var(--light-bg);
+}
+
+.header .flex{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header .flex .logo{
+   font-size: 1.5rem;
+   color:var(--green);
+}
+
+.header .flex .logo:hover{
+   color:var(--violet);
+}
+
+.header .flex .navbar a{
+   margin-left: 2rem;
+   color:var(--green);
+   font-size: 2rem;
+}
+
+.header .flex .navbar a:hover{
+   color:var(--violet);
+}
+
+#menu-btn{
+   cursor: pointer;
+   color:var(--black);
+   font-size: 2.5rem;
+   display: none;
+}
+
+.commands .box-container .box{
+    background-color: #a64cff;
+    margin-top: 1cm;
+    margin-left: 0.4cm;
+    margin-right: 0.4cm;
+    border-radius: 0cm;
+    padding: 2rem;
+    display: flex;
+    height: 15cm;
+}
+
+.commands .box-container .box h3{
+   font-size: 2.9cm;
+   color: var(--black);
+   position: fixed;
+   margin-top: 0.5cm;
+   margin-left: 3cm;
+}
+
+.commands .box-container .box h4{
+   font-size: 0.8cm;
+   color: #fff;
+   margin-top: 5cm;
+   margin-left: 3cm;
+}
+
+.commands .box-container .box p{
+   font-size: 0.9cm;
+   color: #fff;
+   margin-top: 4.9cm;
+   margin-left: 5.5cm;
+}
